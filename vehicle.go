@@ -26,8 +26,8 @@ type feedbackResult struct {
 	feedbackNeutral  int
 }
 
-type vehicleResult map[string]feedbackResult
-type inventory []vehicle
+var vehicleResult map[string]feedbackResult
+var inventory []vehicle
 
 // Values array for the feedback.json file
 type Values struct {
