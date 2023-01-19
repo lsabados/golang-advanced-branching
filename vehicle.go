@@ -34,7 +34,7 @@ type Values struct {
 
 // Model array for the feedback.json file
 type Model struct {
-	Name     []string `json:"model"`
+	Name     string   `json:"model"`
 	Feedback []string `json:"feedback"`
 }
 
