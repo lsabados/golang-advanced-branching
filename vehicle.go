@@ -1,5 +1,8 @@
 package main
 
+type vehicle interface {
+}
+
 type car struct {
 	model       string
 	make        string
