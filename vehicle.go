@@ -1,7 +1,6 @@
 package main
 
 type vehicle interface {
-
 }
 type car struct {
 	model       string
@@ -21,10 +20,10 @@ type bike struct {
 }
 
 type feedbackResult struct {
-	feedbackTotal int
+	feedbackTotal    int
 	feedbackPositive int
 	feedbackNegative int
-	feedbackNeutral int
+	feedbackNeutral  int
 }
 
 // Values array for the feedback.json file
@@ -34,9 +33,8 @@ type Values struct {
 
 // Model array for the feedback.json file
 type Model struct {
-	Name type string `json:"model"`
-	Feedback type []string `json:"feedback"`
-
+	Name     string   `json:"model"`
+	Feedback []string `json:"feedback"`
 }
 
 type rating float32
