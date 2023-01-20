@@ -101,5 +101,10 @@ func readJSONFile() Values {
 }
 
 func generateRating() {
-	f = readJSONFile()
+	f := readJSONFile()
+	for _,v = range f.Models {
+		var vehResult type feedbackResult
+		var vehRating type rating
+		for _,msg range v.Feedback
+	}
 }
