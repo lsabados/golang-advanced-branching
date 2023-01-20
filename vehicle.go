@@ -1,7 +1,14 @@
 package main
+import {
+	"encoding/json"
+	"io/ioutil"
+	"log"
+	"os"
+}
 
 type vehicle interface {
 }
+
 type car struct {
 	model       string
 	make        string
@@ -76,7 +83,7 @@ func main() {
 	// Print ratings for the different vehicles
 }
 
-/*
+
 func readJSONFile() Values {
 	jsonFile, err := os.Open("feedback.json")
 
@@ -92,4 +99,8 @@ func readJSONFile() Values {
 
 	return content
 }
-*/
+
+func generateRating() {
+	f = readJSONFile()
+}
+
