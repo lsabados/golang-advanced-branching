@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
 )
 
 type vehicle interface {
@@ -103,9 +104,11 @@ func readJSONFile() Values {
 func generateRating() {
 	f := readJSONFile()
 	for _, v = range f.Models {
-		var vehResult = feedbackResult
-		var vehRating = rating
+		var vehResult feedbackResult
+		var vehRating rating
 		for _, msg = range v.Feedback {
+			if text := strings.Split(msg, ""); len(text) >= 5 {
+			}
 
 		}
 	}
