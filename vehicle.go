@@ -81,7 +81,7 @@ func init() {
 func main() {
 
 	// Generate ratings for the different vehicles
-
+	generateRating()
 	// Print ratings for the different vehicles
 }
 
@@ -135,5 +135,6 @@ func generateRating() {
 			}
 
 		}
+		vehicleResult[v.Name] = vehResult
 	}
 }
